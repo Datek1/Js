@@ -69,11 +69,11 @@ createUl('Text3', 6)
 const array2 = [1, 'Text', true]
 
 function createList(array) {
-    document.write('<li>')
+    document.write('<ul>')
     for (const arrayElement of array) {
-        document.write(`${arrayElement}`,' ')
+        document.write(`<li>${arrayElement}</li>`)
     }
-    document.write('</li>')
+    document.write('</ul>')
 }
 
 createList(array2)
