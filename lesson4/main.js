@@ -11,6 +11,7 @@ console.log(sRectagel(4, 5))
 function sCircle(r) {
     return 3.14 * r ** 2
 }
+
 console.log(sCircle(5));
 
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
@@ -98,13 +99,19 @@ function printUsers(array) {
 printUsers(users)
 
 // - створити функцію яка повертає найменьше число з масиву
-const arrayNumber = [5, 23, -564, 748, 5]
+const arrayNumber = [5, -555, -666, 1, 10]
 
-function findMinNum(array) {
-    return Math.min(...array)
+function findMin(arr){
+    let min = arr[0]
+    for (const minElement of arr) {
+        if(minElement<min){
+            min = minElement
+        }
+    }
+    return min
 }
+console.log(findMin(arrayNumber));
 
-console.log(findMinNum(arrayNumber));
 
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 
@@ -123,7 +130,7 @@ console.log(sum(arrayNumber));
 
 function swap(arr, index1, index2) {
     [arr[index1], arr[index2]] = [arr[index2], arr[index1]]
-        console.log(arr);
+    console.log(arr);
 }
 
 swap([11, 22, 33, 44], 3, 0)
