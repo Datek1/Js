@@ -51,8 +51,8 @@ nextBtn.onclick = function (e) {
     if (+localStorage.getItem('for') >= 100) {
         localStorage.setItem('for', '0')
     } else {
-        let bb = +localStorage.getItem('for')
-        localStorage.setItem('for', bb + 10)
+        let bb = +localStorage.getItem('for')+ 10
+        localStorage.setItem('for', bb)
         const divs = document.getElementsByClassName('users')
         let index = 0
         for (let i = bb; i <= bb + 10; i++) {
